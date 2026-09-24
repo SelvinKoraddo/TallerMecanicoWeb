@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.p-4 {
+  font-family: system-ui, sans-serif;
+   background-color: #011423;
+}
+.hero {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+/* Cuando se abre el sidebar */
+.hero.shifted {
+  margin-left: 250px; /* ajusta según el ancho de tu sidebar */
+    width: calc(100% - 250px); /* Resta el ancho del sidebar */
+}
+.hamburger{
+  position: fixed;
+  color: #ffffff !important;
+}
+
+/* ============Estilo del SIDEBAR==============*/
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Oculto inicialmente */
+  background: #292121;
+  color: #fff;
+  transition: all 0.3s;
+  z-index: 1050;
+  padding-top: 1rem;
+}
+.sidebar.active {
+  left: 0;
+}
+.sidebar .nav-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: #0d6efd;
+  color: #fff;
+}
+.sidebar .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+/* Botón hamburguesa */
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #212529;
+}
+/* ============fin Estilo del SIDEBAR==============*/
+.footer.shifted {
+  margin-left: 250px; /* igual al ancho del sidebar */
+  transition: margin-left 0.3s ease;
+}
