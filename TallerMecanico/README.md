@@ -1,6 +1,6 @@
-# Motor Masters
+# Motor Masters 
 
-Sistema web para la gestión de un taller automotriz. Permite registrar clientes, administrar servicios, registrar vehículos y crear órdenes de servicio.
+Sistema web para la gestión de un taller automotriz. Permite registrar clientes, administrar servicios, registrar vehículos y crear órdenes de servicio.(proyecto académico)
 
 ## Tecnologías
 
